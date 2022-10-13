@@ -25,7 +25,7 @@ function findLongestWord(words) {
       longestWord = currentWord;
     }
   }
-  if (longestWord.length === 0) {
+  if (!longestWord.length) {
     return null;
   }
   return longestWord;
@@ -74,7 +74,7 @@ console.log(sum(mixedArr));
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers) {
-  if (numbers.length === 0) {
+  if (!numbers.length) {
     return null;
   }
   return sumNumbers(numbers) / numbers.length;
@@ -95,7 +95,7 @@ const wordsArr = [
 ];
 
 function averageWordLength(words) {
-  if (words.length === 0) {
+  if (!words.length) {
     return null;
   }
   let length = 0;
@@ -107,7 +107,7 @@ function averageWordLength(words) {
 
 // Bonus - Iteration #4.1
 function avg(array) {
-  if (array.length === 0) {
+  if (!array.length) {
     return null;
   }
   return sum(array) / array.length;
@@ -129,7 +129,7 @@ const wordsUnique = [
 ];
 
 function uniquifyArray(words) {
-  if (words.length === 0) {
+  if (!words.length) {
     return null;
   }
   let uniqueArray = [];
